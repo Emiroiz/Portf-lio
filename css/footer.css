@@ -5,9 +5,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-footer span {
-    font-size: 0.8em;
+    font-size: 0.8em;  /* aplica direto sem precisar de span */
     font-weight: 200;
+    color: #e8e8f0;
 }
