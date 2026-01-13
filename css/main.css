@@ -1,42 +1,40 @@
 main {
     padding: 5%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    gap: 3rem;
+    flex-wrap: wrap; /* 🔥 ISSO resolve o quebra-quebra */
 }
 
 /* MAIN CONTENT ====== */
 main .main-content {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
 }
 
 main .main-content .text p {
-    margin-bottom: 10%;
-}
-
-main .main-content .text p {
-    margin-bottom: 10%;
-}
-
-main .main-content .text p {
-    width: 75%;
+    width: 100%;
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
 /* CARDS ===== */
+main .techs .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
 main .techs .cards-container .card {
     width: 120px;
     height: 120px;
     padding: 10px;
     background-color: #131320;
     border-radius: 8px;
-    margin-right: 0.9em;
-    margin-left: 0.9em;
     cursor: pointer;
 
     display: flex;
@@ -55,18 +53,18 @@ main figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 main figure img {
-    width: 400px;
-    height: 400px;
-    border-radius: 200px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
 
-    margin-bottom: 6%;
+    margin-bottom: 1rem;
     cursor: pointer;
     border: 1px #7c6cf6 solid;
-    transition: 0.2s ease-in-out
+    transition: 0.2s ease-in-out;
 }
 
 main figure img:hover {
